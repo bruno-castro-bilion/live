@@ -715,14 +715,16 @@ body.cad-trava{overflow:hidden}
     try { sessionStorage.setItem("cadastro", JSON.stringify({ nome: nome.split(" ")[0], quando: Date.now(), email: email.toLowerCase(), fone: "55" + fone })); } catch (x) {}
     var segue = function(){ location.href = "obrigado.html" + location.search; };
     if (!cfg.URL_PLANILHA){ segue(); return; }
-    // sendBeacon: o navegador garante a entrega mesmo depois que a pessoa muda de página,
-    // então ninguém fica esperando a planilha (que às vezes leva vários segundos para gravar).
-    var foi = false;
-    try { foi = navigator.sendBeacon(cfg.URL_PLANILHA, dados); } catch (x) {}
-    if (!foi){
-      fetch(cfg.URL_PLANILHA, { method: "POST", body: dados, mode: "no-cors", keepalive: true }).catch(function(){});
-    }
-    setTimeout(segue, 350);
+    // fetch com keepalive: o navegador termina o envio mesmo depois que a pessoa muda de página.
+    // credentials "omit" é essencial: sem isso, quem está logado em mais de uma conta Google
+    // manda os cookies junto e o Apps Script recusa o cadastro.
+    var saiu = false;
+    try {
+      fetch(cfg.URL_PLANILHA, { method: "POST", body: dados, mode: "no-cors", keepalive: true, credentials: "omit" }).catch(function(){});
+      saiu = true;
+    } catch (x) {}
+    if (!saiu){ try { navigator.sendBeacon(cfg.URL_PLANILHA, dados); } catch (x) {} }
+    setTimeout(segue, 600);
   });
 
   // Contagem regressiva até a live
