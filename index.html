@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black November Código Español · Live 26/11 às 20h · Pare de fingir que entende</title>
+<meta name="description" content="Faltam dias. No dia 26/11 às 20h, Adriany Burgos revela ao vivo o menor preço que já ofereceu. Preço e bônus só para quem estiver no grupo VIP durante a live. Entrar é gratuito.">
+<meta property="og:title" content="Black November · 26/11 às 20h · Espanhol que muda sua carreira">
+<meta property="og:description" content="Preço e bônus revelados só ao vivo. Quem não estiver no grupo VIP quando ela anunciar não terá acesso. A entrada é gratuita.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/adriany-mesa.jpg">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preload" href="assets/fonts/Raleway-Heavy.otf" as="font" type="font/otf" crossorigin>
+<link rel="preload" href="assets/adriany-hero.png" as="image">
+
+<!-- Configuração (link do grupo, planilha, pixel, data da live): editar o config.js -->
+<script src="config.js?v=5"></script>
+<script src="rastreio.js?v=4"></script>
+
+<style>
+@font-face{font-family:"Raleway";src:url("assets/fonts/Raleway-Regular.otf") format("opentype");font-weight:400;font-display:swap}
+@font-face{font-family:"Raleway";src:url("assets/fonts/Raleway-Medium.otf") format("opentype");font-weight:500;font-display:swap}
+@font-face{font-family:"Raleway";src:url("assets/fonts/Raleway-Bold.otf") format("opentype");font-weight:700;font-display:swap}
+@font-face{font-family:"Raleway";src:url("assets/fonts/Raleway-ExtraBold.otf") format("opentype");font-weight:800;font-display:swap}
+@font-face{font-family:"Raleway";src:url("assets/fonts/Raleway-Heavy.otf") format("opentype");font-weight:900;font-display:swap}
+
+:root{
+  --preto:#0b0606;
+  --preto-2:#140b0a;
+  --cartao:#1b100f;
+  --borda:rgba(246,234,210,.12);
+  --creme:#f6ead2;
+  --creme-2:#cdbfa8;
+  --vermelho:#e3301c;
+  --vermelho-2:#ff4a2e;
+  --amarelo:#f6b93b;
+  --verde:#25d366;
+  --raio:18px;
+  --largura:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"Raleway",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-feature-settings:"lnum" 1;
+  background:var(--preto);color:var(--creme);
+  font-size:18px;line-height:1.6;font-weight:500;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  padding-bottom:0;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.container{width:100%;max-width:var(--largura);margin:0 auto;padding:0 24px}
+section{padding:88px 0;position:relative}
+h1,h2,h3{font-weight:900;line-height:1.08;letter-spacing:-.015em}
+h2{font-size:clamp(30px,4.4vw,48px);margin-bottom:20px}
+h2 em,h1 em{font-style:normal;color:var(--vermelho-2)}
+.sobretitulo{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--amarelo);margin-bottom:18px;
+}
+.sobretitulo::before{content:"";width:28px;height:2px;background:var(--amarelo)}
+.lead{font-size:clamp(18px,2vw,21px);color:var(--creme-2);max-width:720px}
+.centro{text-align:center}
+.centro .lead{margin:0 auto}
+.centro .sobretitulo::after{content:"";width:28px;height:2px;background:var(--amarelo)}
+
+/* ---------- Botão ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  background:linear-gradient(180deg,var(--vermelho-2),var(--vermelho));
+  color:#fff;text-decoration:none;font-weight:900;
+  font-size:clamp(16px,1.9vw,19px);line-height:1.25;text-align:center;
+  padding:20px 30px;border-radius:14px;border:0;cursor:pointer;
+  box-shadow:0 14px 40px -10px rgba(227,48,28,.75),inset 0 1px 0 rgba(255,255,255,.28);
+  transition:transform .18s ease,box-shadow .18s ease,filter .18s ease;
+  text-transform:uppercase;letter-spacing:.02em;
+}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.07);box-shadow:0 20px 50px -10px rgba(227,48,28,.9),inset 0 1px 0 rgba(255,255,255,.28)}
+.btn svg{flex:none;width:24px;height:24px}
+.btn-pulsa{animation:pulsa 2.4s ease-in-out infinite}
+@keyframes pulsa{0%,100%{box-shadow:0 14px 40px -10px rgba(227,48,28,.75),0 0 0 0 rgba(227,48,28,.5)}50%{box-shadow:0 14px 40px -10px rgba(227,48,28,.75),0 0 0 14px rgba(227,48,28,0)}}
+.micro{font-size:14px;color:var(--creme-2);margin-top:14px;display:flex;gap:8px;align-items:center}
+.centro .micro{justify-content:center}
+.micro b{color:var(--creme)}
+.micro svg{width:15px;height:15px;flex:none;color:var(--amarelo)}
+
+/* ---------- Faixa do topo ---------- */
+.faixa{
+  background:var(--vermelho);color:#fff;font-weight:800;font-size:13px;
+  letter-spacing:.14em;text-transform:uppercase;overflow:hidden;white-space:nowrap;
+  padding:10px 0;position:relative;z-index:5;
+}
+.faixa-trilho{display:inline-flex;gap:0;animation:rola 32s linear infinite}
+.faixa-trilho span{padding:0 22px;display:inline-flex;align-items:center;gap:22px}
+.faixa-trilho span::after{content:"•";opacity:.75}
+@keyframes rola{to{transform:translateX(-50%)}}
+
+/* ---------- Hero ---------- */
+.hero{padding:0;overflow:hidden;
+  background:
+    radial-gradient(900px 620px at 82% 38%,rgba(227,48,28,.34),transparent 62%),
+    radial-gradient(600px 400px at 8% 0%,rgba(246,185,59,.10),transparent 60%),
+    linear-gradient(180deg,#120808 0%,var(--preto) 100%);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(rgba(246,234,210,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(246,234,210,.045) 1px,transparent 1px);
+  background-size:56px 56px;
+  -webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000 0%,transparent 70%);mask-image:radial-gradient(ellipse at 70% 40%,#000 0%,transparent 70%);
+}
+.hero-topo{display:flex;align-items:center;justify-content:space-between;padding-top:26px;position:relative;z-index:2}
+.hero-topo img{height:46px;width:auto}
+.selo-aovivo{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--borda);padding:8px 14px;border-radius:99px;background:rgba(0,0,0,.35)}
+.selo-aovivo i{width:9px;height:9px;border-radius:50%;background:var(--vermelho-2);box-shadow:0 0 0 0 rgba(255,74,46,.7);animation:ponto 1.6s infinite}
+@keyframes ponto{70%{box-shadow:0 0 0 9px rgba(255,74,46,0)}100%{box-shadow:0 0 0 0 rgba(255,74,46,0)}}
+.hero-grade{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:end;position:relative;z-index:2}
+.hero-texto{padding:34px 0 60px}
+.etiqueta-black{
+  display:inline-block;font-weight:900;font-size:clamp(13px,1.4vw,15px);letter-spacing:.2em;text-transform:uppercase;
+  color:var(--preto);background:var(--amarelo);padding:7px 14px;border-radius:6px;margin-bottom:22px;
+}
+h1{font-size:clamp(36px,5vw,60px);margin-bottom:20px}
+.hero-sub{font-size:clamp(17px,1.8vw,20px);color:var(--creme-2);max-width:600px;margin-bottom:10px}
+.hero-sub b{color:var(--creme);font-weight:700}
+.hero-virada{font-size:clamp(20px,2.3vw,25px);font-weight:900;color:var(--creme);margin:14px 0 22px}
+.hero-virada span{background:linear-gradient(transparent 62%,rgba(227,48,28,.75) 62%);padding:0 4px}
+.selo-preco{display:flex;gap:12px;align-items:center;max-width:600px;margin:0 0 18px;padding:13px 18px;border-radius:12px;font-size:16.5px;line-height:1.4;color:var(--creme);background:linear-gradient(90deg,rgba(246,185,59,.2),rgba(246,185,59,.05));border:1px solid rgba(246,185,59,.55)}
+.selo-preco::before{content:"";width:5px;align-self:stretch;border-radius:3px;background:var(--amarelo);flex:none}
+.selo-preco b{color:var(--amarelo);font-weight:900}
+.selo-preco span{display:block}
+.quando{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.quando div{display:flex;align-items:center;gap:10px;background:rgba(246,234,210,.06);border:1px solid var(--borda);border-radius:12px;padding:11px 16px;font-weight:700;font-size:15.5px}
+.quando svg{width:20px;height:20px;color:var(--amarelo);flex:none}
+.hero-foto{position:relative;align-self:start;display:flex;justify-content:center;margin-top:34px}
+.hero-foto::before{
+  content:"";position:absolute;left:50%;bottom:6%;width:92%;aspect-ratio:1;transform:translateX(-50%);
+  border-radius:50%;background:radial-gradient(circle,rgba(227,48,28,.55),rgba(227,48,28,0) 68%);filter:blur(10px);
+}
+.hero-foto img{position:relative;width:122%;max-width:690px;height:auto;margin-right:-10%;
+  -webkit-mask-image:linear-gradient(#000 90%,transparent 100%);mask-image:linear-gradient(#000 90%,transparent 100%)}
+.cracha{
+  position:absolute;left:-6px;bottom:15%;background:rgba(11,6,6,.82);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border:1px solid var(--borda);border-left:3px solid var(--vermelho-2);border-radius:12px;padding:12px 16px;line-height:1.3;
+}
+.cracha strong{display:block;font-weight:900;font-size:16px}
+.cracha small{font-size:12.5px;color:var(--creme-2);font-weight:600}
+
+/* ---------- Contagem ---------- */
+.contagem{display:flex;gap:10px;margin-top:26px}
+.contagem div{min-width:74px;background:rgba(0,0,0,.45);border:1px solid var(--borda);border-radius:12px;padding:10px 8px;text-align:center}
+.contagem b{display:block;font-size:30px;font-weight:900;line-height:1;font-variant-numeric:tabular-nums}
+.contagem small{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--creme-2);font-weight:700}
+.contagem-rotulo{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--creme-2);font-weight:800;margin-top:26px}
+.contagem-rotulo + .contagem{margin-top:10px}
+.centro .contagem{justify-content:center}
+
+/* ---------- Números ---------- */
+.numeros{padding:0;border-top:1px solid var(--borda);border-bottom:1px solid var(--borda);background:var(--preto-2)}
+.numeros .container{display:grid;grid-template-columns:repeat(3,1fr)}
+.numeros div{padding:30px 20px;text-align:center;border-left:1px solid var(--borda)}
+.numeros div:first-child{border-left:0}
+.numeros b{display:block;font-size:clamp(28px,3.6vw,42px);font-weight:900;color:var(--creme);line-height:1.1}
+.numeros b span{color:var(--vermelho-2)}
+.numeros small{font-size:14.5px;color:var(--creme-2);font-weight:600}
+
+/* ---------- Atenção ---------- */
+.atencao-caixa{
+  position:relative;border-radius:22px;padding:44px 40px;overflow:hidden;
+  background:linear-gradient(135deg,#2a0d08,#160807);
+  border:1px solid rgba(246,185,59,.45);
+  box-shadow:0 30px 80px -30px rgba(227,48,28,.5);
+}
+.atencao-caixa::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:10px;
+  background:repeating-linear-gradient(-45deg,var(--amarelo) 0 16px,#140707 16px 32px);
+}
+.atencao-grade{display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center}
+.atencao-caixa h2{font-size:clamp(26px,3.6vw,40px);margin-bottom:14px}
+.atencao-caixa h2 small{display:block;font-size:14px;letter-spacing:.2em;color:var(--amarelo);margin-bottom:10px;font-weight:900}
+.atencao-caixa p{color:var(--creme-2);max-width:640px}
+.atencao-caixa p b{color:var(--creme)}
+.sem{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.sem span{font-size:13.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border:1px solid rgba(246,234,210,.25);border-radius:99px;padding:7px 14px}
+.data-cartao{background:var(--creme);color:var(--preto);border-radius:18px;padding:22px 26px;text-align:center;min-width:210px;transform:rotate(2deg)}
+.data-cartao small{display:block;font-weight:900;letter-spacing:.2em;font-size:12px;text-transform:uppercase;color:var(--vermelho)}
+.data-cartao b{display:block;font-size:76px;font-weight:900;line-height:1}
+.data-cartao span{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:15px}
+.data-cartao em{display:block;font-style:normal;margin-top:10px;padding-top:10px;border-top:2px dashed rgba(11,6,6,.25);font-weight:900;font-size:20px}
+
+/* ---------- Dores ---------- */
+.dores{background:var(--preto-2)}
+.dores-grade{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:44px}
+.dor{background:var(--cartao);border:1px solid var(--borda);border-radius:var(--raio);padding:28px;position:relative}
+.dor::before{content:"“";position:absolute;right:22px;top:2px;font-size:96px;font-weight:900;color:rgba(227,48,28,.28);line-height:1}
+.dor h3{font-size:21px;line-height:1.3;margin-bottom:10px;max-width:88%}
+.dor p{font-size:16.5px;color:var(--creme-2)}
+.virada{margin-top:40px;text-align:center;font-size:clamp(20px,2.4vw,26px);font-weight:800;line-height:1.4;max-width:820px;margin-left:auto;margin-right:auto}
+.virada em{font-style:normal;color:var(--vermelho-2)}
+
+/* ---------- Para quem ---------- */
+.paraquem-grade{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.foto-moldura{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--borda)}
+.foto-moldura img{width:100%;height:100%;object-fit:cover}
+.foto-moldura::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 70%,rgba(11,6,6,.28));pointer-events:none}
+.foto-alta{aspect-ratio:4/5}
+.foto-larga{aspect-ratio:3/2}
+.canto{position:relative}
+.canto::before{content:"";position:absolute;left:-14px;top:-14px;width:120px;height:120px;border-left:3px solid var(--vermelho);border-top:3px solid var(--vermelho);border-radius:22px 0 0 0;z-index:1}
+.niveis{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0}
+.nivel{background:var(--cartao);border:1px solid var(--borda);border-radius:14px;padding:18px 20px}
+.nivel b{display:block;font-weight:900;font-size:18px;margin-bottom:4px}
+.nivel span{font-size:15.5px;color:var(--creme-2)}
+.destaque-6{display:flex;gap:18px;align-items:center;background:linear-gradient(135deg,rgba(227,48,28,.2),rgba(227,48,28,.05));border:1px solid rgba(227,48,28,.5);border-radius:16px;padding:20px 22px}
+.destaque-6 b.num{font-size:58px;font-weight:900;line-height:1;color:var(--vermelho-2)}
+.destaque-6 p{font-size:17px;line-height:1.45}
+.destaque-6 p b{font-weight:900}
+
+/* ---------- Curso ---------- */
+.curso{background:var(--creme);color:#1a0d0b}
+.curso .sobretitulo{color:var(--vermelho)}
+.curso .sobretitulo::before,.curso .sobretitulo::after{background:var(--vermelho)}
+.curso h2 em{color:var(--vermelho)}
+.curso .lead{color:#5b4a41}
+.curso-grade{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.item{background:#fff;border-radius:var(--raio);padding:28px;border:1px solid rgba(26,13,11,.08);box-shadow:0 14px 34px -22px rgba(26,13,11,.35);text-align:left}
+.item .ico{width:50px;height:50px;border-radius:13px;background:var(--vermelho);color:#fff;display:grid;place-items:center;margin-bottom:18px}
+.item .ico svg{width:26px;height:26px}
+.item h3{font-size:20px;line-height:1.25;margin-bottom:8px}
+.item p{font-size:16px;color:#5b4a41}
+.item.misterio{background:#1a0d0b;color:var(--creme);border:1px dashed var(--amarelo)}
+.item.misterio .ico{background:var(--amarelo);color:#1a0d0b}
+.item.misterio p{color:var(--creme-2)}
+.curso .btn{margin-top:44px}
+.curso .micro{color:#5b4a41}
+.curso .micro b{color:#1a0d0b}
+
+/* ---------- Sobre ---------- */
+.sobre-grade{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.sobre p{color:var(--creme-2);margin-bottom:16px}
+.sobre p b{color:var(--creme)}
+.assinatura{display:flex;gap:26px;margin-top:26px;flex-wrap:wrap}
+.assinatura div b{display:block;font-size:30px;font-weight:900;color:var(--amarelo);line-height:1.1}
+.assinatura div small{font-size:14px;color:var(--creme-2);font-weight:600}
+
+/* ---------- Diferenciais ---------- */
+.dif{background:var(--preto-2)}
+.dif-grade{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.dif-fixo{position:sticky;top:32px}
+.dif-lista{list-style:none;display:grid;gap:14px}
+.dif-lista li{display:grid;grid-template-columns:auto 1fr;gap:18px;background:var(--cartao);border:1px solid var(--borda);border-radius:16px;padding:22px 24px}
+.dif-lista .n{font-size:15px;font-weight:900;color:var(--vermelho-2);border:1.5px solid rgba(227,48,28,.6);border-radius:10px;width:42px;height:42px;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.dif-lista h3{font-size:19px;line-height:1.3;margin-bottom:4px}
+.dif-lista p{font-size:16px;color:var(--creme-2)}
+
+/* ---------- Passos ---------- */
+.passos-grade{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px;counter-reset:passo}
+.passo{background:var(--cartao);border:1px solid var(--borda);border-radius:var(--raio);padding:30px 28px;text-align:left;position:relative;counter-increment:passo}
+.passo::before{content:"0" counter(passo);display:block;font-size:54px;font-weight:900;line-height:1;margin-bottom:14px;color:transparent;-webkit-text-stroke:1.5px var(--vermelho-2)}
+.passo h3{font-size:21px;margin-bottom:8px;line-height:1.25}
+.passo p{font-size:16.5px;color:var(--creme-2)}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--preto-2)}
+.faq-lista{max-width:820px;margin:40px auto 0;display:grid;gap:12px;text-align:left}
+details{background:var(--cartao);border:1px solid var(--borda);border-radius:14px;overflow:hidden}
+details[open]{border-color:rgba(227,48,28,.55)}
+summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:800;font-size:18px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;font-weight:500;color:var(--vermelho-2);line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 24px 22px;color:var(--creme-2);font-size:16.5px}
+
+/* ---------- Final ---------- */
+.final{overflow:hidden;text-align:center;
+  background:radial-gradient(800px 500px at 50% 100%,rgba(227,48,28,.45),transparent 65%),var(--preto)}
+.final h2{font-size:clamp(32px,5vw,58px);max-width:900px;margin:0 auto 18px}
+.final .btn{margin-top:30px}
+
+footer{border-top:1px solid var(--borda);padding:36px 0 110px;text-align:center;font-size:13.5px;color:#8f8173}
+footer img{height:34px;width:auto;margin:0 auto 16px;opacity:.9}
+footer p{max-width:720px;margin:0 auto 6px}
+
+/* ---------- Barra fixa (celular) ---------- */
+.barra-fixa{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;
+  background:rgba(11,6,6,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-top:1px solid var(--borda);padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  transform:translateY(110%);transition:transform .3s ease;
+}
+.barra-fixa.visivel{transform:none}
+.barra-fixa .btn{width:100%;padding:15px 16px;font-size:15px}
+
+/* ---------- Animação de entrada ---------- */
+.anima .surge{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.anima .surge.ok{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .anima .surge{opacity:1;transform:none;transition:none}
+  .btn-pulsa,.faixa-trilho,.selo-aovivo i{animation:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width:960px){
+  section{padding:64px 0}
+  /* no celular a foto sobe: selo, FOTO, headline, preço, data, botão e só depois o texto de apoio */
+  .hero-grade{display:flex;flex-direction:column;align-items:center;text-align:center;gap:0;padding:14px 0 44px}
+  .hero-texto{display:contents}
+  .etiqueta-black{order:1;margin-bottom:0;position:relative;z-index:3}
+  .hero-foto{order:2;align-self:auto;width:100%;height:300px;overflow:hidden;margin-top:4px;align-items:flex-start;border-bottom:2px solid var(--vermelho)}
+  .hero-foto::before{bottom:auto;top:2%;width:320px;background:radial-gradient(circle,rgba(227,48,28,.6),rgba(227,48,28,0) 66%)}
+  .hero-foto img{width:300px;max-width:none;margin:0;-webkit-mask-image:none;mask-image:none}
+  .cracha{display:none}
+  h1{order:3;margin-top:16px;margin-bottom:14px}
+  .selo-preco{order:4;text-align:left;margin-bottom:14px}
+  .quando{order:5;justify-content:center;margin-bottom:14px}
+  .hero .btn{order:6}
+  .hero .micro{order:7;justify-content:center;text-align:left}
+  .hero-sub{order:8;margin:22px auto 0}
+  .hero-virada{order:9;margin-bottom:0}
+  .hero .contagem-rotulo{order:10}
+  .hero .contagem{order:11;justify-content:center}
+  .atencao-grade,.paraquem-grade,.sobre-grade,.dif-grade{grid-template-columns:1fr;gap:34px}
+  .data-cartao{justify-self:center}
+  .dif-fixo{position:static}
+  .curso-grade,.passos-grade{grid-template-columns:1fr 1fr}
+  .sobre-grade .foto-moldura{order:-1}
+  .barra-fixa{display:block}
+}
+@media (max-width:620px){
+  .so-desktop{display:none}
+  h1{font-size:clamp(27px,8.9vw,36px)}
+  body{font-size:17px}
+  .container{padding:0 20px}
+  .hero-topo img{height:34px}
+  .selo-aovivo{font-size:10.5px;padding:7px 11px}
+  .btn{width:100%;padding:18px 18px}
+  .dores-grade,.curso-grade,.passos-grade,.niveis{grid-template-columns:1fr}
+  .numeros .container{grid-template-columns:1fr;padding:0}
+  .numeros div{border-left:0;border-top:1px solid var(--borda);padding:20px}
+  .numeros div:first-child{border-top:0}
+  .atencao-caixa{padding:44px 22px 30px}
+  .contagem div{min-width:0;flex:1}
+  .contagem b{font-size:26px}
+  .quando{gap:8px}
+  .quando div{font-size:13.5px;padding:8px 11px;gap:7px}
+  .quando svg{width:17px;height:17px}
+  .selo-preco{font-size:15px;padding:11px 14px}
+  .dif-lista li{padding:18px;gap:14px}
+  .canto::before{left:-8px;top:-8px;width:80px;height:80px}
+}
+
+/* ---------- Formulário de cadastro (janela) ---------- */
+.cad{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(6,3,3,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.cad.aberto{display:flex}
+.cad-caixa{position:relative;width:100%;max-width:470px;max-height:calc(100vh - 36px);overflow:auto;background:var(--cartao);border:1px solid var(--borda);border-radius:22px;padding:34px 28px 26px;box-shadow:0 40px 90px -20px rgba(0,0,0,.8);animation:cadEntra .28s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes cadEntra{from{opacity:0;transform:translateY(24px) scale(.96)}to{opacity:1;transform:none}}
+.cad-fecha{position:absolute;top:12px;right:12px;width:40px;height:40px;border:0;border-radius:50%;background:rgba(246,234,210,.08);color:var(--creme);font-size:24px;line-height:1;cursor:pointer}
+.cad-passos{display:flex;gap:8px;margin-bottom:16px}
+.cad-passos i{height:6px;flex:1;border-radius:99px;background:rgba(246,234,210,.14)}
+.cad-passos i.on{background:var(--vermelho-2)}
+.cad h3{font-size:clamp(24px,5.6vw,29px);margin-bottom:8px}
+.cad h3 em{font-style:normal;color:var(--vermelho-2)}
+.cad-sub{font-size:16px;color:var(--creme-2);margin-bottom:20px;line-height:1.5}
+.cad label{display:block;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--creme-2);margin:14px 0 6px}
+.cad input{width:100%;font:inherit;font-size:17px;font-weight:600;color:var(--preto);background:var(--creme);border:2px solid transparent;border-radius:12px;padding:15px 16px;outline:none;transition:border-color .15s}
+.cad input:focus{border-color:var(--amarelo)}
+.cad input.erro{border-color:var(--vermelho-2)}
+.cad .msg-erro{display:none;font-size:14px;color:var(--vermelho-2);font-weight:700;margin-top:6px}
+.cad .msg-erro.on{display:block}
+.cad .btn{width:100%;margin-top:22px;font-family:inherit}
+.cad .btn[disabled]{opacity:.7;cursor:wait;animation:none}
+.cad-lgpd{font-size:12.5px;line-height:1.5;color:var(--creme-2);margin-top:14px;text-align:center}
+.cad-mel{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+body.cad-trava{overflow:hidden}
+</style>
+</head>
+<body>
+
+<!-- Faixa do topo -->
+<div class="faixa" aria-hidden="true">
+  <div class="faixa-trilho">
+    <span>Black November Código Español</span><span>Quinta, 26 de novembro, às 20h</span><span>Ao vivo e gratuito</span><span>Preço e bônus só na live</span>
+    <span>Black November Código Español</span><span>Quinta, 26 de novembro, às 20h</span><span>Ao vivo e gratuito</span><span>Preço e bônus só na live</span>
+    <span>Black November Código Español</span><span>Quinta, 26 de novembro, às 20h</span><span>Ao vivo e gratuito</span><span>Preço e bônus só na live</span>
+    <span>Black November Código Español</span><span>Quinta, 26 de novembro, às 20h</span><span>Ao vivo e gratuito</span><span>Preço e bônus só na live</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-topo">
+      <img src="assets/logo-creme.png" alt="Código Español" width="900" height="207">
+      <span class="selo-aovivo"><i></i>Live ao vivo</span>
+    </div>
+    <div class="hero-grade">
+      <div class="hero-texto">
+        <span class="etiqueta-black">Black November 2026</span>
+        <h1>Pare de fingir que entende espanhol <em>na reunião.</em></h1>
+        <p class="hero-sub">Você sabe que, se falasse espanhol de verdade, <b>aquela vaga já seria sua. Aquela promoção, também.</b> A diferença entre você e quem foi escolhido é uma: eles abriram a boca.</p>
+        <p class="hero-virada">Chega de adiar. <span>Em 26 de novembro, você decide.</span></p>
+        <p class="selo-preco"><span><b>Preço de Black Friday, imperdível:</b> um valor que eu nunca pratiquei antes. Revelado só na live.</span></p>
+        <div class="quando">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>Quinta<span class="so-desktop">-feira</span>, 26 de novembro</span></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>20h<span class="so-desktop"> (horário de Brasília)</span></span></div>
+        </div>
+        <a class="btn btn-pulsa js-cta" href="#grupo-vip">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.1c-.2.7-1.400 1.300-2 1.400-.5.1-1.200.1-1.900-.1-.4-.1-1-.3-1.700-.6-3-1.300-4.900-4.300-5.100-4.500-.1-.2-1.200-1.600-1.200-3s.7-2.100 1-2.400c.3-.3.6-.3.800-.3h.6c.2 0 .4-.1.7.5l1 2.300c.1.200.1.400 0 .600l-.4.600-.5.500c-.2.200-.3.300-.1.700.2.300.9 1.400 1.900 2.300 1.300 1.100 2.400 1.500 2.700 1.600.3.200.5.100.7-.1l1-1.200c.2-.3.400-.2.700-.1l2.200 1c.3.200.5.200.600.400.1.100.1.700-.1 1.400Z"/></svg>
+          Quero entrar no grupo VIP e garantir meu lugar na live
+        </a>
+        <p class="micro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span><b>100% gratuito.</b> Entre agora para receber o link da live e o lembrete no dia.</span></p>
+        <p class="contagem-rotulo js-contagem-rotulo">A live começa em</p>
+        <div class="contagem js-contagem" aria-live="off">
+          <div><b data-u="d">00</b><small>dias</small></div>
+          <div><b data-u="h">00</b><small>horas</small></div>
+          <div><b data-u="m">00</b><small>min</small></div>
+          <div><b data-u="s">00</b><small>seg</small></div>
+        </div>
+      </div>
+      <div class="hero-foto">
+        <img src="assets/adriany-hero.png?v=6" alt="Adriany Burgos, professora nativa de espanhol" width="905" height="1222" fetchpriority="high">
+        <div class="cracha"><strong>Adriany Burgos</strong><small>Professora nativa de espanhol</small></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- NÚMEROS -->
+<section class="numeros" aria-label="Números da Adriany">
+  <div class="container">
+    <div><b><span>+</span>500</b><small>pessoas já aprenderam espanhol comigo</small></div>
+    <div><b><span>+</span>15 anos</b><small>ensinando espanhol</small></div>
+    <div><b>Nativa</b><small>espanhol de verdade, não portunhol</small></div>
+  </div>
+</section>
+
+<!-- ATENÇÃO -->
+<section class="atencao">
+  <div class="container">
+    <div class="atencao-caixa surge">
+      <div class="atencao-grade">
+        <div>
+          <h2><small>ATENÇÃO</small>Quem não estiver ao vivo no dia 26 <em>não terá acesso.</em></h2>
+          <p>O preço e os bônus são revelados uma única vez, ao vivo, no dia 26 às 20h, para quem estiver no grupo VIP. <b>Quando a live acabar, a oferta sai do ar e não volta.</b></p>
+          <div class="sem"><span>Sem replay da oferta</span><span>Sem segunda chance</span><span>Sem exceção</span></div>
+        </div>
+        <div class="data-cartao" aria-label="26 de novembro, quinta-feira, às 20 horas">
+          <small>Quinta-feira</small>
+          <b>26</b>
+          <span>de novembro</span>
+          <em>às 20h</em>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DORES -->
+<section class="dores">
+  <div class="container">
+    <div class="centro">
+      <span class="sobretitulo">Você se reconhece?</span>
+      <h2>Você entende espanhol.<br>Mas na hora de falar, <em>trava.</em></h2>
+      <p class="lead">Se alguma destas situações já aconteceu com você, esta live foi feita exatamente para você.</p>
+    </div>
+    <div class="dores-grade">
+      <div class="dor surge"><h3>“Eu entendo o que falam, mas na hora de responder, trava tudo.”</h3><p>Você acompanha a conversa, mas quando chega a sua vez dá branco, e o medo de errar na frente dos colegas fala mais alto.</p></div>
+      <div class="dor surge"><h3>“Leio o e-mail, entendo tudo, mas não consigo defender minha ideia.”</h3><p>Argumentar, negociar e convencer em espanhol ainda parecem coisa de outro nível, e você acaba dependendo de alguém para falar por você.</p></div>
+      <div class="dor surge"><h3>“Fico quieto na call enquanto os outros avançam.”</h3><p>Você vê colegas com menos experiência do que você sendo escolhidos para projetos internacionais. E sabe exatamente por quê.</p></div>
+      <div class="dor surge"><h3>“Já tentei de tudo. Escola, app, curso gravado. Não saí do lugar.”</h3><p>Porque nenhum deles te coloca em situações reais de trabalho, com alguém nativo do seu lado corrigindo você na hora.</p></div>
+    </div>
+    <p class="virada surge">Enquanto você espera o momento certo, a vaga, o cargo e a promoção estão indo para <em>quem já abriu a boca.</em></p>
+  </div>
+</section>
+
+<!-- PARA QUEM -->
+<section class="paraquem">
+  <div class="container paraquem-grade">
+    <div class="canto surge">
+      <div class="foto-moldura foto-alta"><img src="assets/adriany-explica.jpg" alt="Adriany Burgos explicando" loading="lazy" width="933" height="1400"></div>
+    </div>
+    <div class="surge">
+      <span class="sobretitulo">Para quem é</span>
+      <h2>Não importa onde você está hoje. <em>Em 6 meses, você fala.</em></h2>
+      <div class="niveis">
+        <div class="nivel"><b>Começando do zero</b><span>Você nunca estudou e quer se preparar antes de precisar.</span></div>
+        <div class="nivel"><b>Entende, mas trava</b><span>Você se vira no portunhol e quer falar espanhol de verdade.</span></div>
+      </div>
+      <div class="destaque-6">
+        <b class="num">6</b>
+        <p><b>meses.</b> É o tempo para você sair do zero, ou do portunhol, e falar espanhol com segurança dentro da empresa, pronto para a vaga ou a promoção que já deveria ser sua.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURSO -->
+<section class="curso">
+  <div class="container centro">
+    <span class="sobretitulo">O que você vai ter</span>
+    <h2>Na live, eu abro vagas com <em>o menor preço que já ofereci.</em></h2>
+    <p class="lead">O mesmo método que já transformou mais de 500 carreiras. Vagas limitadas, preço revelado só ao vivo. Só para quem estiver no grupo VIP no dia 26.</p>
+    <div class="curso-grade">
+      <div class="item surge"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div><h3>Você abre a boca e fala sem travar</h3><p>O foco é conversação. A gramática entra quando ajuda você a falar melhor.</p></div>
+      <div class="item surge"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></div><h3>Situações reais do ambiente de trabalho</h3><p>Reunião, negociação, apresentação, entrevista: você treina exatamente o que vai usar amanhã.</p></div>
+      <div class="item surge"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div><h3>A comunicação que muda o seu cargo</h3><p>Postura, clareza e firmeza em espanhol, para você ser ouvido nas decisões.</p></div>
+      <div class="item surge"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><path d="m16 11 2 2 4-4"/></svg></div><h3>Correção individual de uma professora nativa</h3><p>Eu corrijo você na hora, com o espanhol que se fala de verdade nas empresas.</p></div>
+      <div class="item surge"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.500"/><path d="M2 20a7 7 0 0 1 14 0"/><circle cx="17.500" cy="9" r="2.500"/><path d="M17.500 14a5 5 0 0 1 4.500 5"/></svg></div><h3>Turma pequena, sem você se perder</h3><p>Grupo de até 10 pessoas. Você fala em todas as aulas e eu acompanho a sua evolução de perto.</p></div>
+      <div class="item misterio surge"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="12" rx="2"/><path d="M12 9v12M3 13h18M12 9S10 3 7.500 4.500 9 9 12 9Zm0 0s2-6 4.500-4.500S15 9 12 9Z"/></svg></div><h3>Bônus surpresa, revelados só na live</h3><p>Eles só aparecem ao vivo, no dia 26, para quem estiver no grupo VIP.</p></div>
+    </div>
+    <a class="btn js-cta" href="#grupo-vip">Quero entrar no grupo VIP e garantir meu lugar na live</a>
+    <p class="micro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span><b>100% gratuito.</b> Você recebe o link da live e o lembrete no dia.</span></p>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre">
+  <div class="container sobre-grade">
+    <div class="surge">
+      <span class="sobretitulo">Quem vai te ensinar</span>
+      <h2>Olá, eu sou a <em>Adriany Burgos.</em></h2>
+      <p>Sou <b>professora de espanhol e nativa.</b> Já ajudei <b>mais de 500 pessoas</b> a conquistar vagas internacionais, a subir de cargo e a finalmente parar de depender dos outros numa reunião em espanhol.</p>
+      <p>Nas minhas aulas você treina para se comunicar com <b>segurança e autoridade</b> e passa a conduzir a reunião em vez de ficar esperando ela acabar.</p>
+      <p>No dia 26 de novembro, vou fazer <b>a maior Black Friday da minha história.</b> Vai ser a única vez que ofereço esse preço.</p>
+      <div class="assinatura">
+        <div><b>+500</b><small>pessoas ajudadas</small></div>
+        <div><b>+15 anos</b><small>de sala de aula</small></div>
+        <div><b>100%</b><small>foco em espanhol profissional</small></div>
+      </div>
+    </div>
+    <div class="foto-moldura foto-larga surge"><img src="assets/adriany-mesa.jpg" alt="Adriany Burgos em sua mesa de trabalho" loading="lazy" width="1400" height="933"></div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="dif">
+  <div class="container dif-grade">
+    <div class="dif-fixo surge">
+      <span class="sobretitulo">Por que comigo</span>
+      <h2>Espanhol feito para <em>quem usa no trabalho.</em></h2>
+      <div class="foto-moldura foto-larga" style="margin-top:26px"><img src="assets/adriany-globo.jpg" alt="Adriany Burgos apontando a América Latina no globo" loading="lazy" width="1400" height="933"></div>
+    </div>
+    <ul class="dif-lista">
+      <li class="surge"><span class="n">01</span><div><h3>Treino de conversa desde a primeira aula</h3><p>Comunicação estratégica treinada para reuniões, negociações e apresentações reais no ambiente corporativo.</p></div></li>
+      <li class="surge"><span class="n">02</span><div><h3>Feito por quem trabalha com empresas de verdade</h3><p>Já treinei profissionais dentro de empresas e conheço a rotina de reuniões, prazos e negociações.</p></div></li>
+      <li class="surge"><span class="n">03</span><div><h3>Professora nativa, não portunhol</h3><p>O espanhol que se fala na América Latina e na Espanha, com a pronúncia e as expressões certas.</p></div></li>
+      <li class="surge"><span class="n">04</span><div><h3>Método testado com mais de 500 alunos</h3><p>Mais de 15 anos de sala de aula, metas claras e prática toda semana.</p></div></li>
+      <li class="surge"><span class="n">05</span><div><h3>Cabe na vida de quem trabalha</h3><p>Formato pensado para profissionais com agenda cheia. Você evolui sem precisar reorganizar sua rotina inteira.</p></div></li>
+      <li class="surge"><span class="n">06</span><div><h3>Segurança para conduzir a conversa</h3><p>Postura e firmeza em espanhol para apresentar, negociar e defender as suas ideias.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="passos">
+  <div class="container centro">
+    <span class="sobretitulo">Como participar</span>
+    <h2>Em 30 segundos, <em>seu lugar está garantido.</em></h2>
+    <p class="lead">O grupo VIP é gratuito e é a única forma de receber o link da live e as condições da Black November.</p>
+    <div class="passos-grade">
+      <div class="passo surge"><h3>Entre no grupo VIP</h3><p>Toque no botão abaixo e entre no grupo exclusivo. Leva 30 segundos. É 100% gratuito.</p></div>
+      <div class="passo surge"><h3>Receba o link e o lembrete</h3><p>O link da live e o lembrete no dia 26 chegam direto no grupo. Você não vai esquecer.</p></div>
+      <div class="passo surge"><h3>Apareça ao vivo no dia 26, às 20h</h3><p>É ao vivo que eu revelo o preço e os bônus da Black, só para quem estiver lá.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container centro">
+    <span class="sobretitulo">Dúvidas frequentes</span>
+    <h2>Tire suas dúvidas e <em>entre.</em></h2>
+    <div class="faq-lista">
+      <details><summary>Preciso pagar alguma coisa para participar da live?</summary><p>Não. Entrar no grupo VIP e assistir à live é 100% gratuito.</p></details>
+      <details><summary>Não sei nada de espanhol. Serve para mim?</summary><p>Serve. Seja para quem não sabe nada, seja para quem sabe só um pouco. Em 6 meses, você se prepara para conquistar a vaga ou a promoção que quer e fala espanhol de verdade com a sua equipe.</p></details>
+      <details><summary>Qual é o preço do curso?</summary><p>O preço e os bônus só serão revelados na live. O que posso adiantar é que será um valor que eu nunca pratiquei antes.</p></details>
+      <details><summary>Se eu não puder assistir ao vivo, consigo a oferta depois?</summary><p>Não. As condições da Black valem somente para quem estiver ao vivo, no grupo VIP, durante a live. Não haverá replay da oferta nem segunda chance.</p></details>
+      <details><summary>Como eu recebo o link da live?</summary><p>Pelo grupo VIP. Entrando agora, você recebe o link da live e o lembrete no dia.</p></details>
+      <details><summary>Quando e a que horas vai ser?</summary><p>Quinta-feira, 26 de novembro, às 20h, no horário de Brasília.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final centro" id="grupo-vip">
+  <div class="container">
+    <span class="sobretitulo">Última chamada</span>
+    <h2>26 de novembro, 20h. Você vai estar <em>lá ou vai ficar de fora?</em></h2>
+    <p class="lead" style="margin:0 auto">Preço e bônus revelados uma única vez, ao vivo. Só para quem estiver no grupo VIP. Depois da live, acabou.</p>
+    <div class="centro">
+      <p class="contagem-rotulo js-contagem-rotulo">A live começa em</p>
+      <div class="contagem js-contagem">
+        <div><b data-u="d">00</b><small>dias</small></div>
+        <div><b data-u="h">00</b><small>horas</small></div>
+        <div><b data-u="m">00</b><small>min</small></div>
+        <div><b data-u="s">00</b><small>seg</small></div>
+      </div>
+      <a class="btn btn-pulsa js-cta" href="#grupo-vip">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.1c-.2.7-1.400 1.300-2 1.400-.5.1-1.200.1-1.900-.1-.4-.1-1-.3-1.700-.6-3-1.300-4.900-4.300-5.100-4.500-.1-.2-1.200-1.600-1.200-3s.7-2.100 1-2.400c.3-.3.6-.3.800-.3h.6c.2 0 .4-.1.7.5l1 2.300c.1.200.1.400 0 .600l-.4.600-.5.500c-.2.200-.3.300-.1.700.2.300.9 1.400 1.900 2.300 1.300 1.100 2.400 1.500 2.700 1.600.3.200.5.100.7-.1l1-1.200c.2-.3.400-.2.700-.1l2.200 1c.3.200.5.200.600.400.1.100.1.700-.1 1.400Z"/></svg>
+        Quero entrar no grupo VIP e garantir meu lugar na live
+      </a>
+      <p class="micro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span><b>100% gratuito.</b> Entre agora para receber o link da live e o lembrete no dia.</span></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <img src="assets/logo-creme.png" alt="Código Español" width="900" height="207" loading="lazy">
+    <p>Código Español · Adriany Burgos · Todos os direitos reservados.</p>
+    <p>Este site não é afiliado ao Facebook, ao Instagram ou a qualquer entidade da Meta. Os resultados variam de pessoa para pessoa e dependem da dedicação de cada aluno.</p>
+  </div>
+</footer>
+
+<!-- Formulário de cadastro (abre em todos os botões) -->
+<div class="cad js-cad" role="dialog" aria-modal="true" aria-labelledby="cad-titulo">
+  <div class="cad-caixa">
+    <button class="cad-fecha js-cad-fecha" type="button" aria-label="Fechar">&times;</button>
+    <div class="cad-passos" aria-hidden="true"><i class="on"></i><i></i></div>
+    <h3 id="cad-titulo">Garanta seu lugar na <em>live de 26/11</em></h3>
+    <p class="cad-sub">Preencha seus dados e, no próximo passo, você entra no grupo VIP onde eu vou mandar o link da live.</p>
+    <form class="js-form" novalidate>
+      <label for="cad-nome">Seu nome</label>
+      <input id="cad-nome" name="nome" type="text" autocomplete="given-name" placeholder="Como você gosta de ser chamado" required>
+      <p class="msg-erro" data-erro="nome">Digite seu nome.</p>
+      <label for="cad-whats">Seu WhatsApp</label>
+      <input id="cad-whats" name="whatsapp" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="(11) 98765-4321" required>
+      <p class="msg-erro" data-erro="whatsapp">Digite seu WhatsApp com DDD.</p>
+      <label for="cad-email">Seu melhor e-mail</label>
+      <input id="cad-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="voce@email.com" required>
+      <p class="msg-erro" data-erro="email">Digite um e-mail válido.</p>
+      <input class="cad-mel" name="site" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn btn-pulsa js-enviar" type="submit">Quero meu lugar na live</button>
+      <p class="cad-lgpd">100% gratuito. Ao enviar, você aceita receber mensagens sobre a live por WhatsApp e e-mail. Seus dados não serão compartilhados.</p>
+    </form>
+  </div>
+</div>
+
+<!-- Barra fixa no celular -->
+<div class="barra-fixa js-barra">
+  <a class="btn js-cta" href="#grupo-vip">Garantir meu lugar na live · gratuito</a>
+</div>
+
+<script>
+(function(){
+  var cfg = window.CONFIG || {};
+
+  // ---------- Formulário de cadastro ----------
+  // Todos os botões abrem o formulário. O cadastro vai para a planilha (URL_PLANILHA)
+  // e a pessoa segue para obrigado.html, onde entra no grupo VIP e o pixel conta o Lead.
+  var cad = document.querySelector(".js-cad");
+  var form = document.querySelector(".js-form");
+  var enviar = document.querySelector(".js-enviar");
+  var campoWhats = form.querySelector("[name=whatsapp]");
+  var abriuUmaVez = false;
+  function abrir(e){
+    if (e) e.preventDefault();
+    cad.classList.add("aberto");
+    document.body.classList.add("cad-trava");
+    setTimeout(function(){ form.querySelector("[name=nome]").focus(); }, 60);
+    if (!abriuUmaVez){ abriuUmaVez = true; window.rastrear("AbriuFormulario", {}, false); }
+  }
+  function fechar(){
+    cad.classList.remove("aberto");
+    document.body.classList.remove("cad-trava");
+  }
+  document.querySelectorAll(".js-cta").forEach(function(a){ a.href = "#cadastro"; a.addEventListener("click", abrir); });
+  document.querySelector(".js-cad-fecha").addEventListener("click", fechar);
+  cad.addEventListener("click", function(e){ if (e.target === cad) fechar(); });
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape") fechar(); });
+  if (location.hash === "#cadastro") abrir();
+
+  // Máscara do WhatsApp: (11) 98765-4321
+  campoWhats.addEventListener("input", function(){
+    var d = campoWhats.value.replace(/\D/g, "");
+    if (d.length > 11 && d.indexOf("55") === 0) d = d.slice(2);
+    d = d.slice(0, 11);
+    var r = d;
+    if (d.length > 2) r = "(" + d.slice(0, 2) + ") " + d.slice(2);
+    if (d.length > 7) r = "(" + d.slice(0, 2) + ") " + d.slice(2, d.length - 4) + "-" + d.slice(-4);
+    campoWhats.value = r;
+  });
+
+  function erro(nome, mostrar){
+    form.querySelector("[name=" + nome + "]").classList.toggle("erro", mostrar);
+    form.querySelector("[data-erro=" + nome + "]").classList.toggle("on", mostrar);
+    return mostrar;
+  }
+  form.addEventListener("input", function(e){ if (e.target.name) erro(e.target.name, false); });
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var nome = form.nome.value.trim();
+    var fone = form.whatsapp.value.replace(/\D/g, "");
+    var email = form.email.value.trim();
+    var falhou = false;
+    falhou = erro("nome", nome.length < 2) || falhou;
+    falhou = erro("whatsapp", fone.length < 10 || fone.length > 11) || falhou;
+    falhou = erro("email", !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) || falhou;
+    if (falhou){ form.querySelector(".erro").focus(); return; }
+
+    enviar.disabled = true;
+    enviar.textContent = "Enviando...";
+    var q = new URLSearchParams(location.search);
+    var dados = new URLSearchParams();
+    dados.append("nome", nome);
+    dados.append("whatsapp", form.whatsapp.value.trim());
+    dados.append("email", email);
+    dados.append("site", form.site.value);
+    ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"].forEach(function(k){ dados.append(k, q.get(k) || ""); });
+    dados.append("pagina", location.href.split("#")[0]);
+
+    try { sessionStorage.setItem("cadastro", JSON.stringify({ nome: nome.split(" ")[0], quando: Date.now(), email: email.toLowerCase(), fone: "55" + fone })); } catch (x) {}
+    var segue = function(){ location.href = "obrigado.html" + location.search; };
+    if (!cfg.URL_PLANILHA){ segue(); return; }
+    // sendBeacon: o navegador garante a entrega mesmo depois que a pessoa muda de página,
+    // então ninguém fica esperando a planilha (que às vezes leva vários segundos para gravar).
+    var foi = false;
+    try { foi = navigator.sendBeacon(cfg.URL_PLANILHA, dados); } catch (x) {}
+    if (!foi){
+      fetch(cfg.URL_PLANILHA, { method: "POST", body: dados, mode: "no-cors", keepalive: true }).catch(function(){});
+    }
+    setTimeout(segue, 350);
+  });
+
+  // Contagem regressiva até a live
+  var alvo = new Date(cfg.DATA_DA_LIVE || "2026-11-26T20:00:00-03:00").getTime();
+  var blocos = document.querySelectorAll(".js-contagem");
+  var rotulos = document.querySelectorAll(".js-contagem-rotulo");
+  function dois(n){ return (n < 10 ? "0" : "") + n; }
+  function tique(){
+    var resta = alvo - Date.now();
+    if (resta <= 0){
+      rotulos.forEach(function(r){ r.textContent = "A live já começou. Corra para o grupo VIP!"; });
+      blocos.forEach(function(b){ b.style.display = "none"; });
+      clearInterval(relogio);
+      return;
+    }
+    var s = Math.floor(resta / 1000);
+    var v = { d: Math.floor(s / 86400), h: Math.floor(s % 86400 / 3600), m: Math.floor(s % 3600 / 60), s: s % 60 };
+    blocos.forEach(function(b){
+      b.querySelectorAll("[data-u]").forEach(function(el){ el.textContent = dois(v[el.dataset.u]); });
+    });
+  }
+  var relogio = setInterval(tique, 1000);
+  tique();
+
+  // Animação de entrada
+  // (só esconde os blocos se o navegador suportar; ?estatico=1 desliga, útil para prints)
+  var itens = document.querySelectorAll(".surge");
+  if ("IntersectionObserver" in window && location.search.indexOf("estatico") < 0){
+    document.documentElement.classList.add("anima");
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add("ok"); obs.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    itens.forEach(function(el){ obs.observe(el); });
+  } else {
+    itens.forEach(function(el){ el.classList.add("ok"); });
+  }
+
+  // Barra fixa do celular: aparece depois do primeiro botão e some na seção final
+  var barra = document.querySelector(".js-barra");
+  var final = document.querySelector(".final");
+  function rolagem(){
+    var passou = window.scrollY > 620;
+    var noFim = final.getBoundingClientRect().top < window.innerHeight * 0.6;
+    barra.classList.toggle("visivel", passou && !noFim);
+  }
+  window.addEventListener("scroll", rolagem, { passive: true });
+  rolagem();
+})();
+</script>
+</body>
+</html>
