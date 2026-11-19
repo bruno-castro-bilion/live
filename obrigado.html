@@ -84,6 +84,23 @@ footer{margin-top:30px;font-size:12.5px;color:rgba(205,191,168,.6);text-align:ce
 
   botao.addEventListener("click", function(){ window.rastrear("EntrouGrupoVIP", {}, false); });
 
+  // Rede de segurança: se o envio da página anterior deu erro, tenta de novo daqui
+  // (só quando o envio anterior falhou de verdade; envio ainda em andamento não fica pendente por erro)
+  setTimeout(function(){
+    var pend = null;
+    try { pend = localStorage.getItem("cadastroPendente"); } catch (e) {}
+    if (!pend || !cfg.URL_PLANILHA) return;
+    var desde = 0;
+    try { desde = Number(localStorage.getItem("cadastroPendenteTentativa") || 0); } catch (e) {}
+    if (Date.now() - desde < 15000) return;
+    try { localStorage.setItem("cadastroPendenteTentativa", String(Date.now())); } catch (e) {}
+    fetch(cfg.URL_PLANILHA, { method: "POST", body: pend, mode: "cors", credentials: "omit", keepalive: true,
+      headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" } })
+      .then(function(r){ return r.text(); })
+      .then(function(t){ if (t.indexOf('"ok":true') >= 0){ localStorage.removeItem("cadastroPendente"); localStorage.removeItem("cadastroPendenteTentativa"); } })
+      .catch(function(){});
+  }, 1500);
+
   // Abre o grupo sozinho depois de alguns segundos (só na primeira visita)
   if (link && cad && !cad.abriu){
     var s = 4;

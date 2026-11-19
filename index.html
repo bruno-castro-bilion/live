@@ -715,16 +715,42 @@ body.cad-trava{overflow:hidden}
     try { sessionStorage.setItem("cadastro", JSON.stringify({ nome: nome.split(" ")[0], quando: Date.now(), email: email.toLowerCase(), fone: "55" + fone })); } catch (x) {}
     var segue = function(){ location.href = "obrigado.html" + location.search; };
     if (!cfg.URL_PLANILHA){ segue(); return; }
-    // fetch com keepalive: o navegador termina o envio mesmo depois que a pessoa muda de página.
-    // credentials "omit" é essencial: sem isso, quem está logado em mais de uma conta Google
-    // manda os cookies junto e o Apps Script recusa o cadastro.
-    var saiu = false;
-    try {
-      fetch(cfg.URL_PLANILHA, { method: "POST", body: dados, mode: "no-cors", keepalive: true, credentials: "omit" }).catch(function(){});
-      saiu = true;
-    } catch (x) {}
-    if (!saiu){ try { navigator.sendBeacon(cfg.URL_PLANILHA, dados); } catch (x) {} }
-    setTimeout(segue, 600);
+
+    // Envio para a planilha:
+    //  - credentials "omit": sem cookies (com cookies do Google o Apps Script recusa quem tem várias contas logadas)
+    //  - mode "cors": o Google libera ler a resposta, então dá para saber se gravou
+    //  - keepalive: se a pessoa já estiver no obrigado, o navegador termina o envio
+    // Se der erro, o cadastro fica guardado e o obrigado.html tenta de novo.
+    var corpo = dados.toString();
+    var t0 = Date.now();
+    var envio = function(){
+      return fetch(cfg.URL_PLANILHA, { method: "POST", body: corpo, mode: "cors", credentials: "omit", keepalive: true,
+        headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" } })
+        .then(function(r){ return r.text().then(function(t){ return { ok: r.ok && t.indexOf('"ok":true') >= 0, info: "HTTP " + r.status + " " + t.slice(0, 60) }; }); });
+    };
+    var diag = /[?&]diag=/.test(location.search);
+    // Só guarda para reenviar se o envio falhar de verdade (assim não duplica linha quando o Google só demora)
+    var p = envio().then(function(res){
+      if (!res.ok){ try { localStorage.setItem("cadastroPendente", corpo); } catch (x) {} }
+      return res;
+    }, function(err){
+      try { localStorage.setItem("cadastroPendente", corpo); } catch (x) {}
+      return { ok: false, info: "ERRO: " + (err && err.message || err) };
+    });
+
+    if (diag){
+      // Modo diagnóstico (?diag=1): não sai da página e mostra o resultado na tela
+      p.then(function(res){
+        var caixa = document.createElement("pre");
+        caixa.style.cssText = "white-space:pre-wrap;background:#fff;color:#000;font:14px/1.4 monospace;padding:12px;border-radius:10px;margin-top:14px";
+        caixa.textContent = "DIAGNÓSTICO\nresultado: " + (res.ok ? "GRAVOU NA PLANILHA" : "NÃO GRAVOU") + "\n" + res.info + "\ntempo: " + (Date.now() - t0) + " ms\nnavegador: " + navigator.userAgent;
+        form.appendChild(caixa);
+        enviar.disabled = false; enviar.textContent = "Enviar de novo";
+      });
+      return;
+    }
+    // Segue quando o Google confirmar ou em no máximo 2,5 s (o keepalive termina o envio depois)
+    Promise.race([p, new Promise(function(r){ setTimeout(r, 2500); })]).then(segue);
   });
 
   // Contagem regressiva até a live
