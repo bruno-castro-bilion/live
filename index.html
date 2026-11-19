@@ -631,7 +631,6 @@ body.cad-trava{overflow:hidden}
       <label for="cad-email">Seu melhor e-mail</label>
       <input id="cad-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="voce@email.com" required>
       <p class="msg-erro" data-erro="email">Digite um e-mail válido.</p>
-      <input class="cad-mel" name="site" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
       <button class="btn btn-pulsa js-enviar" type="submit">Quero meu lugar na live</button>
       <p class="cad-lgpd">100% gratuito. Ao enviar, você aceita receber mensagens sobre a live por WhatsApp e e-mail. Seus dados não serão compartilhados.</p>
     </form>
@@ -708,7 +707,6 @@ body.cad-trava{overflow:hidden}
     dados.append("nome", nome);
     dados.append("whatsapp", form.whatsapp.value.trim());
     dados.append("email", email);
-    dados.append("site", form.site.value);
     ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"].forEach(function(k){ dados.append(k, q.get(k) || ""); });
     dados.append("pagina", location.href.split("#")[0]);
 
